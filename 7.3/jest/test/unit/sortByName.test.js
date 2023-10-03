@@ -14,4 +14,11 @@ describe("Books names test suit", () => {
       "Гарри Поттер",
     ]);
   });
+
+  test("Should return 0", () => {
+    const input = ["Властелин Колец", "Властелин Колец"];
+    const expected = ["Властелин Колец", "Властелин Колец"];
+    const result = sorting.sortByName(input);
+    expect(result).toEqual(expected);
+  });
 });
